@@ -1,0 +1,15 @@
+<h3 class="page-header">
+  All Owners
+  <span class="pull-right">
+    <%= link_to "New Owner", new_owner_path, class: 'btn btn-sm btn-success' %>
+  </span>
+</h3>
+
+<ul>
+  <% @owners.each do |owner| %>
+    <li>
+    <%= link_to owner.name, owner_url(owner) %>
+    
+    </li>
+  <% end %>
+</ul>

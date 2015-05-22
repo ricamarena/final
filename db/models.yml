@@ -1,0 +1,26 @@
+Project:
+  name: string
+  location: string
+  summary: text
+  owner_id: integer
+  image: string
+  raised: integer
+  goal: integer
+
+User:
+  name: string
+  username: string
+  bio: text
+  password: string
+  cashavailable: float
+  cashinvested: float
+
+Owner:
+  name: string
+  summary: string
+  rating: integer
+
+Investment:
+  project_id: integer
+  user_id: integer
+  amount: integer
