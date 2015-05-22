@@ -42,11 +42,12 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "users", force: true do |t|
     t.string "name"
-    t.string "username"
     t.text   "bio"
     t.string "password"
     t.float  "cashavailable"
     t.float  "cashinvested"
+    t.string "email"
+    t.string "password_digest"
   end
 
 end

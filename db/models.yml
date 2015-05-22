@@ -9,7 +9,8 @@ Project:
 
 User:
   name: string
-  username: string
+  email: string
+  password_digest: string
   bio: text
   password: string
   cashavailable: float

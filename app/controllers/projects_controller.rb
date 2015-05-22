@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+ skip_before_action :auth, only: [:index, :show]
 
   def index
     @projects=Project.all

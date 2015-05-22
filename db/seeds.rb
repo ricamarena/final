@@ -19,12 +19,12 @@ house4 = Project.create(name: "Apartment", location: "New York", image:"apartmen
 house5 = Project.create(name: "Condo", location: "Evanston", image:"condo.jpg", summary: "Small Condo", owner_id: bjb.id, raised: "0", goal: "1000")
 
 puts "Creating Users..."
-john = User.create(name: "John", username: "ke5", bio:"I am Doe")
-doe = User.create(name: "Doe", username: "ke4",  bio:"I am Doe")
-smith = User.create(name: "Smith", username: "ke3",  bio:"I am Smith")
-jane = User.create(name: "Jane", username: "ke2",  bio:"I am Jane")
-sparta = User.create(name: "Sparta", username: "ke1",  bio:"I am Sparta")
-kellogg = User.create(name: "Kellogg", username: "ke0",  bio:"I am Kellogg")
+john = User.create(name: "John", email: "ke5", bio:"I am Doe", password: "secret")
+doe = User.create(name: "Doe", email: "ke4",  bio:"I am Doe", password: "secret")
+smith = User.create(name: "Smith", email: "ke3",  bio:"I am Smith", password: "secret")
+jane = User.create(name: "Jane", email: "ke2",  bio:"I am Jane", password: "secret")
+sparta = User.create(name: "Sparta", email: "ke1",  bio:"I am Sparta", password: "secret")
+kellogg = User.create(name: "Kellogg", email: "ke0",  bio:"I am Kellogg", password: "secret")
 
 
 
