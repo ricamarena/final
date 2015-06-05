@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RE Crowdfunding</title>
+  <title>recMex</title>
   <%= javascript_include_tag 'application' %>
   
   <!-- Logo Font -->
@@ -67,7 +67,7 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <% if current_user %>
-                 <li><%= link_to current_user.try(:name) %></li>
+                 <li><%= link_to current_user.try(:name), edit_user_url(current_user.id) %></li>
                  <li><%= link_to "Logout", logout_url %></li>
                <% else %>
                  <li><%= link_to "Sign In", new_session_url %></li>
