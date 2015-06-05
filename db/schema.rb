@@ -41,13 +41,14 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "projects", ["owner_id"], name: "index_projects_on_owner_id"
 
   create_table "users", force: true do |t|
-    t.string "name"
-    t.text   "bio"
-    t.string "password"
-    t.float  "cashavailable"
-    t.float  "cashinvested"
-    t.string "email"
-    t.string "password_digest"
+    t.string  "name"
+    t.text    "bio"
+    t.string  "password"
+    t.float   "cashavailable"
+    t.float   "cashinvested"
+    t.string  "email"
+    t.string  "password_digest"
+    t.boolean "admin",           default: false
   end
 
 end

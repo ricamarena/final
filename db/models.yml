@@ -12,6 +12,7 @@ User:
   email: string
   password_digest: string
   bio: text
+  admin: boolean
   password: string
   cashavailable: float
   cashinvested: float
