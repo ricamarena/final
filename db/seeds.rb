@@ -26,10 +26,4 @@ jane = User.create(name: "Jane", email: "ke2",  bio:"I am Jane", password: "secr
 sparta = User.create(name: "Sparta", email: "ke1",  bio:"I am Sparta", password: "secret", admin: false, cashavailable: 2000, cashinvested: 0)
 kellogg = User.create(name: "Kellogg", email: "ke0",  bio:"I am Kellogg", password: "secret", admin: false, cashavailable: 2000, cashinvested: 0)
 
-
-
-puts "Creating Investments..."
-Investment.create(project_id: house1.id, user_id: ricardo.id, amount: 300)
-Investment.create(project_id: house3.id, user_id: renee.id, amount: 500)
-Investment.create(project_id: house3.id, user_id: sparta.id, amount: 1000)
 	
