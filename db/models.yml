@@ -25,4 +25,4 @@ Owner:
 Investment:
   project_id: integer
   user_id: integer
-  amount: integer
+  amount: float

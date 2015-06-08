@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "investments", force: true do |t|
     t.integer "project_id"
     t.integer "user_id"
-    t.integer "amount"
+    t.float   "amount"
   end
 
   add_index "investments", ["project_id"], name: "index_investments_on_project_id"

@@ -19,17 +19,17 @@ house4 = Project.create(name: "Apartment", location: "New York", image:"apartmen
 house5 = Project.create(name: "Condo", location: "Evanston", image:"condo.jpg", summary: "Small Condo", owner_id: bjb.id, raised: "0", goal: "1000")
 
 puts "Creating Users..."
-ricardo = User.create(name: "Ricardo", email: "admin@test.com", bio:"I am the Admin", password: "secret", admin: true)
-doe = User.create(name: "Doe", email: "ke4",  bio:"I am Doe", password: "secret", admin: false)
-smith = User.create(name: "Smith", email: "ke3",  bio:"I am Smith", password: "secret", admin: false)
-jane = User.create(name: "Jane", email: "ke2",  bio:"I am Jane", password: "secret", admin: false)
-sparta = User.create(name: "Sparta", email: "ke1",  bio:"I am Sparta", password: "secret", admin: false)
-kellogg = User.create(name: "Kellogg", email: "ke0",  bio:"I am Kellogg", password: "secret", admin: false)
+ricardo = User.create(name: "Ricardo", email: "admin@test.com", bio:"I am the Admin", password: "secret", admin: true, cashavailable: 2000, cashinvested: 0)
+renee = User.create(name: "Renee", email: "renee",  bio:"My wife", password: "test", admin: false, cashavailable: 2000, cashinvested: 0)
+smith = User.create(name: "Smith", email: "ke3",  bio:"I am Smith", password: "secret", admin: false, cashavailable: 2000, cashinvested: 0)
+jane = User.create(name: "Jane", email: "ke2",  bio:"I am Jane", password: "secret", admin: false, cashavailable: 2000, cashinvested: 0)
+sparta = User.create(name: "Sparta", email: "ke1",  bio:"I am Sparta", password: "secret", admin: false, cashavailable: 2000, cashinvested: 0)
+kellogg = User.create(name: "Kellogg", email: "ke0",  bio:"I am Kellogg", password: "secret", admin: false, cashavailable: 2000, cashinvested: 0)
 
 
 
 puts "Creating Investments..."
 Investment.create(project_id: house1.id, user_id: ricardo.id, amount: 300)
-Investment.create(project_id: house3.id, user_id: doe.id, amount: 500)
+Investment.create(project_id: house3.id, user_id: renee.id, amount: 500)
 Investment.create(project_id: house3.id, user_id: sparta.id, amount: 1000)
 	

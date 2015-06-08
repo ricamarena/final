@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :owners
   resources :users
   resources :sessions
+  resources :investments
+
 
   get "/logout", to: "sessions#destroy"
   

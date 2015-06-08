@@ -12,7 +12,9 @@
 
 <p><%= @owner.rating %></p>
 
-<p> <%= link_to "Edit", edit_owner_url(@owner.id), class: 'btn btn-primary', data: { confirm: 'Are you sure?'} %>
-
-	<%= link_to "Delete", owner_url(@owner.id), method: :delete, class: 'btn btn-danger', data: { confirm: 'Seriously?'} %>
-</p>
+<% if current_user.try(:admin) == true %> 
+	<p>
+	 <%= link_to "Edit", edit_owner_url(@owner.id), class: 'btn btn-primary', data: { confirm: 'Are you sure?'} %>
+	 <%= link_to "Delete", owner_url(@owner.id), method: :delete, class: 'btn btn-danger', data: { confirm: 'Seriously?'} %>
+	</p>
+<% end %>

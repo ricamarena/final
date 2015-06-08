@@ -1,10 +1,12 @@
 class OwnersController < ApplicationController
+ 
 
   def index
     @owners=Owner.all
   end
 
   def show
+    @user = current_user
   	@owners=Owner.all
 	  @owner=Owner.find_by(id: params["id"]) 
   end
